@@ -1,0 +1,74 @@
+/* Developed by Russ Williams | Russ-williams.info */
+
+/*****HTML RESET*****/
+
+
+/*****FONTS AND TYPOGRAPHY*****/
+
+body { font-family: palatino linotype, serif; }
+
+h1 { font-size: 2.5em; margin: .5em auto .25em; }
+
+h2 { font-size: 2.15em; margin: .5em auto .25em; }
+
+h3 { font-size: 1.85em; margin: .5em auto .25em; }
+
+h4 { font-size: 1.60em; margin: .5em auto .25em; }
+
+h5 { font-size: 1.40em; margin: .5em auto .25em; }
+
+h6 { font-size: 1.25em; margin: .5em auto .25em; }
+
+
+/*****RESPONSIVE GRID*****/
+
+full-width 		{ width: 96%; margin: 2%; }
+three-fourths-wide	{ width: 71%; margin: 2%; }
+two-fourths-wide	{ width: 46%; margin: 2%; }
+one-fourth-wide		{ width: 21%; margin: 2%; }
+two-thirds-wide		{ width: 62%; margin: 2%; }
+one-third-wide		{ width: 29%; margin: 2%; }
+
+full-high		{ height: 100%;  }
+three-units-high	{ height: 360px; }
+two-units-high		{ height: 240px; }
+one-unit-high		{ height: 120px; }
+one-half-unit-high	{ height: 60px;  }
+automatic-high		{ height: auto;  }
+
+/*****Color Scheme*****/
+
+.black-background 	{ background-color: rgba(31, 29, 29, 1); }
+.black-text 		{ color: rgba(31, 29, 29, 1); }
+.black-outline		{ border: solid 3px rgba(31, 29, 29, 1); }
+.black-outer-shadow	{ box-shadow: 1px 2px rgba(31, 29, 29, 1); }
+.black-inner-shadow	{ box-shadow: inset 1px 2px rgba(31, 29, 29, 1); }
+.black-text-shadow	{ text-shadow: 1px 2px rgba(31, 29, 29, 1); }
+
+.base-background 	{ background-color: rgba(137, 136, 136, 1); }
+.base-text 		{ color: rgba(137,136, 136, 1); }
+.base-outline		{ border: solid 3px rgba(137,136, 136, 1); }
+.base-outer-shadow	{ box-shadow: 1px 2px rgba(137,136, 136, 1); }
+.base-inner-shadow	{ box-shadow: inset 1px 2px rgba(137,136, 136, 1); }
+.base-text-shadow	{ text-shadow: 1px 2px rgba(137,136, 136, 1); }
+
+.light-background 	{ background-color: rgba(231, 229, 229, 1); }
+.light-text 		{ color: rgba(231, 229, 229, 1); }
+.light-outline		{ border: solid 3px rgba(231, 229, 229, 1); }
+.light-outer-shadow	{ box-shadow: 1px 2px rgba(231, 229, 229, 1); }
+.light-inner-shadow	{ box-shadow: inset 1px 2px rgba(231, 229, 229, 1); }
+.light-text-shadow	{ text-shadow: 1px 2px rgba(231, 229, 229, 1); }
+
+
+/*****GENERAL STYLES*****/
+
+.body { width: 100%; }
+	
+.main-container {
+	width: 1280px;
+	height: 100%;
+}
+
+
+
+
