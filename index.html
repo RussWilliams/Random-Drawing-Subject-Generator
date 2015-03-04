@@ -3,9 +3,7 @@
 <head>
    <title>Random Drawing Subject Generator</title>
    <meta name="author" content="Russ Williams | Russ-Williams.info">
-   <meta name="description" content="Ever have problems figuring 
-       	out what to draw next? Not any more. Use the R.D.S.G. to 
-       	get started on your next drawing right away.">
+   <meta name="description" content="Ever have problems figuring out what to draw next? 	Not any more. Use the R.D.S.G. to get started on your next drawing right away.">
    <meta name="keywords" content="drawing, random generator, russ-williams.info">
 
    <link rel="stylesheet" type="text/css" href="style.css" />
@@ -14,39 +12,66 @@
 
 <body>
    <section class="main-container">
-      <header class="full-wide three-units-high base-background light-text">
-         <h1>Random Drawing Subject Generator</h1>
-         <span>created by russ williams | 
-            <a href="www.russ-williams.info">russ-williams.info</a>
-         </span>   
-      </header>
-	  <section class="intro-and-instructions automatic-high">
-           <p>Ever have problems figuring out what you should draw? Well, problem solved! Use this random suject generator to come up with ideas for your next sketch project.</p>
-              Use the "add" buttons to design your project description. When you are ready, use the "build" button to display the finished description. </p>
-           <p><span>Note: </span>
-              All descriptions and content used to build them are of a PG-13ish (or below) nature. Adult content can be found at the <a href="#">Random Drawing Subject Generator: Adult Content Version</a>. If you complete a project using the R.D.S.G., I would love to see it. Visit me at <a href="#'>Russ_Williams.info</a> for contact information.</p>
-	  </section><!--end intro-and-instructions-->
+		<header class="full-wide three-units-high base-background light-text">
+			<h1>Random Drawing Subject Generator</h1>
+			<span>created by russ williams | 
+				<a href="www.russ-williams.info">russ-williams.info</a>
+			</span>   
+		</header>
+		
+		<section class="intro-and-instructions light-background automatic-high three-fourths-wide">
+			<p>
+				Ever have problems figuring out what you should draw? Well, problem solved! Use this random subject generator to come up with ideas for your next sketch project.
+			</p>
+			<p>
+				Use the "add" buttons to design your project description. When you are ready, use the "build" button to display the finished description. 
+			</p>
+			<p>
+				<span>Note: </span>All descriptions and content used to build them are of a PG-13ish (or below) nature. Adult content can be found at the <a href="#">Random Drawing Subject Generator: Adult Content Version</a>. If you complete a project using the R.D.S.G., I would love to see it. Visit me at <a href="#">russ-williams.info</a>.
+			</p>
+		</section><!--end intro-and-instructions-->
 
-	<section class="work-area full-wide automatic-high">
-	   <button class="add-subject-button base-color light-text" type="submit">Add Subject</button>
-	   <button class="add-condition-button base-color light-text black-text-shadow" type="reset">Add Condition</button>
-	   <button class="submit-button base-color light-text" type="submit">Submit</button>
-	   <button class="reset-button base-color light-text" type="reset">Reset</button>
-	   <span class="output-area">Out Put Goes Here</span>
-	</section><!--end work-area-->
+		<section class="work-area full-wide light-background automatic-high three-fourths-wide">
+		   <button class="add-subject-button base-background light-text black-outline" type="submit">Add Subject</button>
+		   
+		   <button class="add-condition-button base-background light-text black-text-shadow black-outline" type="reset">Add Condition</button>
+		   
+		   <button class="submit-button base-background light-text black-outline" type="submit">Submit</button>
+		   <button class="reset-button base-background light-text black-outline" type="reset">Reset</button>
+		   
+		   <br />
+		   
+		   <div class="output-area three-fourths-wide white-background black-outline black-text">Out Put Goes Here</div>
+		</section><!--end work-area-->
 
-      <footer class="full-wide automatic-high base-background light-text">
-         <!--credits and links-->
-         <span>created by russ williams | 
-            <a href="www.russ-williams.info">russ-williams.info</a>
-         </span>   
-         
-         <!--subject submittal form-->
-         <form name="content-suggestions-form" method="POST" action="content-suggestion-form-processor">
-		<p>Submit content to add to our collection <span>Note: </span>all submissions will be reviewed before being added to the database. Please, no wildly inappropriate suggestions. If you would like specifically adult content, plese use the <a href="#">Random Drawing Subject Generator: Adult Content Version</a>.</p>
-         </form>
-      </footer>
+		<footer class="full-wide automatic-high base-background light-text black-outline">
+			<!--credits and links-->
+			<span>created by russ williams | 
+				<a href="www.russ-williams.info">russ-williams.info</a>
+			</span>   
+			 
+			 <!--subject submittal form-->
+			<form class="content-suggestions-form one-fourth-wide" method="POST" action="content-suggestion-form-processor">
+				<p>
+					Submit content to add to our collection <span>Note: </span>all submissions will be reviewed before being added to the database. Please, no wildly inappropriate 	suggestions. If you would like specifically adult content, please use the <a href="#">	Random Drawing Subject Generator: Adult Content Version</a>.
+				</p>		
+				<label for="name">Name: </label>
+				<input name="name" type="text" maxlength="15"></input>
+				<br />
+				<label for="email">Email: </label>
+				<input name="email" type="email" maxlength="20"></input>
+				<br />
+				<label for="suggestion-content">Content: </label>
+				<textarea name="suggestion-content" maxlength="50"></textarea>
+			</form>
+			
+			<span class="copyright full-wide">
+				&copy; Russell Williams. All Rights Reserved. 
+				<a href="#">Terms of Service</a> 
+				<a href="#">Privacy Policy</a>
+			</span>
+		</footer>
  
-   </section><!--end main-container-->
+    </section><!--end main-container-->
 </body>
 </html>

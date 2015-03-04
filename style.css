@@ -1,4 +1,4 @@
-/* Developed by Russ Williams | Russ-williams.info */
+/* Developed by Russ Williams | Russ-Williams.info */
 
 /*****HTML RESET*****/
 
@@ -22,52 +22,106 @@ h6 { font-size: 1.25em; margin: .5em auto .25em; }
 
 /*****RESPONSIVE GRID*****/
 
-full-width 		{ width: 96%; margin: 2%; }
-three-fourths-wide	{ width: 71%; margin: 2%; }
-two-fourths-wide	{ width: 46%; margin: 2%; }
-one-fourth-wide		{ width: 21%; margin: 2%; }
-two-thirds-wide		{ width: 62%; margin: 2%; }
-one-third-wide		{ width: 29%; margin: 2%; }
+.full-width 					{ width: 96%; margin: auto; }
+.three-fourths-wide	{ width: 71%; margin: auto; }
+.two-fourths-wide		{ width: 46%; margin: auto; }
+.one-fourth-wide		{ width: 21%; margin: auto; }
+.two-thirds-wide			{ width: 62%; margin: auto; }
+.one-third-wide			{ width: 29%; margin: auto; }
 
-full-high		{ height: 100%;  }
-three-units-high	{ height: 360px; }
-two-units-high		{ height: 240px; }
-one-unit-high		{ height: 120px; }
-one-half-unit-high	{ height: 60px;  }
-automatic-high		{ height: auto;  }
+.full-high						{ height: 100%;  }
+.seven-units-high		{ height: 448px; }
+.six-units-high			{ height: 384px; }
+.five-units-high			{ height: 320px; }
+.four-units-high			{ height: 256px; }
+.three-units-high		{ height: 192px; }
+.two-units-high			{ height: 128px; }
+.one-unit-high				{ height: 64px; }
+.one-half-unit-high		{ height: 32px;  }
+.automatic-high			{ height: auto;  }
 
 /*****Color Scheme*****/
 
 .black-background 	{ background-color: rgba(31, 29, 29, 1); }
-.black-text 		{ color: rgba(31, 29, 29, 1); }
-.black-outline		{ border: solid 3px rgba(31, 29, 29, 1); }
+.black-text 					{ color: rgba(31, 29, 29, 1); }
+.black-outline				{ border: solid 2px rgba(31, 29, 29, 1); }
 .black-outer-shadow	{ box-shadow: 1px 2px rgba(31, 29, 29, 1); }
 .black-inner-shadow	{ box-shadow: inset 1px 2px rgba(31, 29, 29, 1); }
 .black-text-shadow	{ text-shadow: 1px 2px rgba(31, 29, 29, 1); }
 
 .base-background 	{ background-color: rgba(137, 136, 136, 1); }
-.base-text 		{ color: rgba(137,136, 136, 1); }
-.base-outline		{ border: solid 3px rgba(137,136, 136, 1); }
+.base-text 					{ color: rgba(137,136, 136, 1); }
+.base-outline				{ border: solid 2px rgba(137,136, 136, 1); }
 .base-outer-shadow	{ box-shadow: 1px 2px rgba(137,136, 136, 1); }
 .base-inner-shadow	{ box-shadow: inset 1px 2px rgba(137,136, 136, 1); }
 .base-text-shadow	{ text-shadow: 1px 2px rgba(137,136, 136, 1); }
 
-.light-background 	{ background-color: rgba(231, 229, 229, 1); }
-.light-text 		{ color: rgba(231, 229, 229, 1); }
-.light-outline		{ border: solid 3px rgba(231, 229, 229, 1); }
+.light-background 		{ background-color: rgba(231, 229, 229, 1); }
+.light-text 					{ color: rgba(231, 229, 229, 1); }
+.light-outline				{ border: solid 2px rgba(231, 229, 229, 1); }
 .light-outer-shadow	{ box-shadow: 1px 2px rgba(231, 229, 229, 1); }
 .light-inner-shadow	{ box-shadow: inset 1px 2px rgba(231, 229, 229, 1); }
-.light-text-shadow	{ text-shadow: 1px 2px rgba(231, 229, 229, 1); }
+.light-text-shadow		{ text-shadow: 1px 2px rgba(231, 229, 229, 1); }
 
+.white-background 	{ background-color: rgba(240, 240, 240, 1); }
+.white-text 					{ color: rgba(240, 240, 240, 1); }
+.white-outline				{ border: solid 2px rgba(240, 240, 240, 1); }
+.white-outer-shadow	{ box-shadow: 1px 2px rgba(240, 240, 240, 1); }
+.white-inner-shadow	{ box-shadow: inset 1px 2px rgba(240, 240, 240, 1); }
+.white-text-shadow	{ text-shadow: 1px 2px rgba(240, 240, 240, 1); }
 
 /*****GENERAL STYLES*****/
 
-.body { width: 100%; }
+.body { width: 100%;  }
 	
 .main-container {
-	width: 1280px;
+	width: 100%;
+	max-width: 1280px;
 	height: 100%;
+	margin: auto;
 }
+
+.main-container h1 { text-align: center; }
+
+header { padding-top: 1px;}
+
+header span { float: right;}
+
+.intro-and-instructions {
+	padding: 1px;
+}
+
+.work-area {
+	padding-bottom: 20px;
+}
+
+.work-area button {
+	border-radius: 5px;
+}
+
+.work-area button:first-child {
+	margin-left: 30%;
+}
+
+.work-area button:nth-child(4) {
+	margin-right: 30%;
+}
+
+.work-area button:hover {
+	background-color: rgba(31, 29, 29, 1);
+	color: rgba(231, 229, 229, 1);
+}
+
+.work-area .output-area {
+	margin: 10px auto;
+	padding-left: 5px;
+}
+
+form.content-suggestions-form { 
+	background-color: red;
+	margin-right: 0px;
+}
+
 
 
 
