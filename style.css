@@ -22,10 +22,10 @@ h6 { font-size: 1.25em; margin: .5em auto .25em; }
 
 /*****RESPONSIVE GRID*****/
 
-.full-width 					{ width: 96%; margin: auto; }
-.three-fourths-wide	{ width: 71%; margin: auto; }
-.two-fourths-wide		{ width: 46%; margin: auto; }
-.one-fourth-wide		{ width: 21%; margin: auto; }
+.full-width 					{ width: 100%; margin: auto; }
+.three-fourths-wide	{ width: 75%; margin: auto; }
+.two-fourths-wide		{ width: 50%; margin: auto; }
+.one-fourth-wide		{ width: 25%; margin: auto; }
 .two-thirds-wide			{ width: 62%; margin: auto; }
 .one-third-wide			{ width: 29%; margin: auto; }
 
@@ -72,38 +72,56 @@ h6 { font-size: 1.25em; margin: .5em auto .25em; }
 
 /*****GENERAL STYLES*****/
 
-.body { width: 100%;  }
+.body { 
+	width: 100%;  
+	padding: 0px;
+	margin: 0px;
+}
 	
 .main-container {
 	width: 100%;
-	max-width: 1280px;
+	max-width: 1366px;
 	height: 100%;
 	margin: auto;
 }
 
-.main-container h1 { text-align: center; }
+.main-container h1 { 
+	text-align: center; 
+}
 
-header { padding-top: 1px;}
+header { 
+	padding: 5px; 
+}
 
-header span { float: right;}
+header span { 
+	float: right;
+}
 
 .intro-and-instructions {
-	padding: 1px;
+	padding: 1px 5px;
 }
 
 .work-area {
-	padding-bottom: 20px;
+	padding: 20px 5px;
+	margin-bottom: 0px;
+}
+
+.work-area div {
+	float:left;
+}
+.work-area div {
+	margin: 2%;
 }
 
 .work-area button {
 	border-radius: 5px;
 }
 
-.work-area button:first-child {
+.work-area button:nth-child(5) {
 	margin-left: 30%;
 }
 
-.work-area button:nth-child(4) {
+.work-area button:nth-child(8) {
 	margin-right: 30%;
 }
 
@@ -117,9 +135,18 @@ header span { float: right;}
 	padding-left: 5px;
 }
 
+footer {
+	float: left;
+	padding: 5px;
+}
+
+footer ul.contact-info {
+	float:left;
+	list-style-type: none;
+}
+
 form.content-suggestions-form { 
-	background-color: red;
-	margin-right: 0px;
+	float:right;
 }
 
 
