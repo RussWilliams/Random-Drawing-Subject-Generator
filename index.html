@@ -7,7 +7,7 @@
    <meta name="keywords" content="drawing, random generator, russ-williams.info">
 
    <link rel="stylesheet" type="text/css" href="style.css" />
-   <script type="text/javascript" src="javascript.js"></script>
+   
 </head>
 
 <body>
@@ -33,16 +33,17 @@
 			
 			<div class="clear"></br></div>
 			
-		   <button class="add-subject-button base-background light-text black-outline" type="submit">Add Subject</button>
+		   <button id="add-subject-button" class="base-background light-text black-text-shadow black-outline" onclick="addSubjectFunction();">Add Subject</button>
 		   
-		   <button class="add-condition-button base-background light-text black-text-shadow black-outline" type="reset">Add Condition</button>
+		   <button id="add-condition-button" class="base-background light-text black-text-shadow black-outline" onclick="addConditionFunction();">Add Condition</button>
 		   
-		   <button class="submit-button base-background light-text black-outline" type="submit">Submit</button>
-		   <button class="reset-button base-background light-text black-outline" type="reset">Reset</button>
+		   <button id="submit-button" class="base-background light-text black-text-shadow black-outline" type="submit">Submit</button>
+		   
+		   <button id="reset-button" class="base-background light-text black-text-shadow black-outline" type="reset" onclick="resetOutputFunction();">Reset</button>
 		   
 		   <br />
 		   
-		   <textarea class="output-area three-fourths-wide white-background black-outline black-text">Out Put Goes Here</textarea>
+		   <div id="output-area" class="three-fourths-wide white-background black-outline black-text">Out Put Goes Here</div>
 		   
 		   <div class="clear"></br></div>
 		</section><!--end work-area-->
@@ -73,5 +74,6 @@
 		</footer>
  
     </section><!--end main-container-->
+	<script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
