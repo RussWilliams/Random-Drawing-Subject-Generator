@@ -1,11 +1,3 @@
-{
-  "name": "My extension",
-  ...
-  "permissions": [
-    "http://www.google.com/"
-  ],
-  ...
-}
 //Create arrays to pull from for drawing descriptions.
 
 //Drawing Materials

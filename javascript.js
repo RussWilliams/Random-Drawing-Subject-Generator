@@ -21,17 +21,28 @@
 		document.getElementById('output-area').innerHTML = output;
 	}//end resetOutputFunction
 	
-//Submit function for ajaxing the content from the txt files.
+//Submit function for ajaxing the content from the xml files.
 	function createDescriptionFunction() {
 		//create request object.
 		var  ajaxSubject= new XMLHttpRequest();
 		
-		//send request.
-		ajaxSubject.open("GET", "subjects.js", true); //method, url of source, async?
-		ajaxSubject.send();
-		
 		//get the response.
-		var answer = ajaxSubject.responseText;
-		document.getElementById('output-area').innerHTML = answer;
+		ajaxSubject.onreadystatechange=function() {
+			if (ajaxSubject.readyState==4 && ajaxSubject.status==200) {
+				//assign response to a variable.
+				var answer =  ajaxSubject.responseXML;
+				//get parts from document.
+				var x = answer.getElementsByTagName("drawingMaterial");
+				//sent to output area.
+				for (i = 0; i < x.length; i++) {
+					var text = text + x[i].innerHTML;
+				}//end for statement
+				document.getElementById('output-area').innerHTML = text;
+			}//end if statement
+		}//end state change function
+		
+		//send request.
+		ajaxSubject.open("POST", "subjects.xml", true); //method, url of source, async?
+		ajaxSubject.send();
 	}//end createDescriptionFunction.
 	
